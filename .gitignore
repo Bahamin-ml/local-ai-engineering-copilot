@@ -1,0 +1,74 @@
+
+# ==============================
+# Python Cache
+# ==============================
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ==============================
+# Virtual Environments
+# ==============================
+venv/
+.venv/
+env/
+
+# ==============================
+# Environment Variables & Secrets
+# ==============================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ==============================
+# Local Databases
+# ==============================
+*.db
+*.sqlite
+*.sqlite3
+
+# ==============================
+# Datasets
+# ==============================
+/DATA/
+
+# ==============================
+# Local Storage & RAG Artifacts
+# ==============================
+/storage/
+*.index
+
+# ==============================
+# Model Weights
+# ==============================
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.gguf
+
+# ==============================
+# Logs & Temporary Files
+# ==============================
+*.log
+logs/
+tmp/
+temp/
+
+# ==============================
+# IDE & OS Files
+# ==============================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Project-Specific Files
+# ==============================
+/1200
+/New Text Document.txt

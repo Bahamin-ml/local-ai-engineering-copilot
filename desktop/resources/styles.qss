@@ -1,0 +1,177 @@
+/* desktop/resources/styles.qss */
+* {
+    outline: none;
+    font-family: 'Segoe UI', 'SF Pro Display', -apple-system, sans-serif;
+}
+
+QMainWindow {
+    background-color: #0b0f19;
+}
+
+QWidget {
+    color: #e2e8f0;
+    font-size: 13px;
+}
+
+/* Sidebar Styling */
+QFrame#sidebar, QWidget#sidebar {
+    background-color: #0f172a;
+    border-right: 1px solid #1e293b;
+}
+
+QListWidget {
+    background-color: #0f172a;
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QListWidget::item {
+    color: #94a3b8;
+    background-color: transparent;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin-bottom: 4px;
+}
+
+QListWidget::item:hover {
+    background-color: #1e293b;
+    color: #f1f5f9;
+}
+
+QListWidget::item:selected {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Chat History Display Area */
+QTextBrowser {
+    background-color: #0b0f19;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 14px;
+    selection-background-color: #2563eb;
+}
+
+/* Modern Input Line */
+QLineEdit {
+    background-color: #131c31;
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: #f8fafc;
+    font-size: 13px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #3b82f6;
+    background-color: #17233f;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #2563eb;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+}
+
+QPushButton:hover {
+    background-color: #1d4ed8;
+}
+
+QPushButton:pressed {
+    background-color: #1e40af;
+}
+
+QPushButton:disabled {
+    background-color: #1e293b;
+    color: #64748b;
+}
+
+/* Danger / Delete Button */
+QPushButton#delete_btn {
+    background-color: #ef4444;
+}
+QPushButton#delete_btn:hover {
+    background-color: #dc2626;
+}
+
+/* TopBar Dropdowns & Checkbox */
+QComboBox {
+    background-color: #131c31;
+    border: 1px solid #1e293b;
+    border-radius: 6px;
+    padding: 6px 12px;
+    color: #f8fafc;
+}
+
+QComboBox:hover {
+    border-color: #3b82f6;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 20px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #0f172a;
+    border: 1px solid #1e293b;
+    selection-background-color: #2563eb;
+    selection-color: #ffffff;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+QCheckBox {
+    spacing: 8px;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid #334155;
+    background-color: #0f172a;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #2563eb;
+    border-color: #3b82f6;
+}
+
+QSpinBox {
+    background-color: #131c31;
+    border: 1px solid #1e293b;
+    border-radius: 6px;
+    padding: 5px 8px;
+    color: #f8fafc;
+}
+
+/* Scrollbar Customization */
+QScrollBar:vertical {
+    border: none;
+    background: #0b0f19;
+    width: 8px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #334155;
+    min-height: 24px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #475569;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}

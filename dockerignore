@@ -1,0 +1,27 @@
+# Virtual Environments
+rag_env/
+venv/
+env/
+.venv/
+
+# Raw Datasets (FAISS index in data/ is used, raw raw files are not needed inside the image)
+DATA/
+
+# Python caches & build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Git & IDE configs
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Desktop GUI files (kept on host)
+desktop/
+run_*.bat
